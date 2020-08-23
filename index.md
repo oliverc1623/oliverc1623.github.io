@@ -1,25 +1,20 @@
-## Movies
-
 ## Portfolio
+---
+
+### Spring and Summer of 2020
+
+[Data Science Research Cricle](https://st47s-datascience.github.io/Chang-DSRC2020/)
+<img src="images/cities_night_day_log_reg.png"/>
 
 ---
 
-### Category Name 1 
-
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+### Summer of 2019
+[Observing mouse behavior when stimulating the MPA-vPAG Circuit](https://github.com/oliverc1623/SummerResearch2019/blob/master/Observing%20mouse%20behavior%20when%20stimulating%20the%20vPAG.pdf)
+<img src="images/mouse.png?raw=true"/>
 
 ---
 
-### Category Name 2
+## Movies
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)
