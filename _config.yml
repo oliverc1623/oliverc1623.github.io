@@ -1,13 +1,12 @@
 title: Oliver Chang # your name (or website title) here
-logo: "/images/circleme.png?raw=true" # your photo (or logo) here
+logo: "/images/fancyoliver.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Runner, Math/CS Major, and baseball nerd - but not necessarily in that order.
   <br><br>
-  Hey there! My name is Oliver Chang and I am a computer science and math major at Pomona College. 
-  This website showcases my projects, work experiences, and movie lists. I look forward to
-  filling my site with more content! 
-  <br><br>
-  <a href="https://www.linkedin.com/in/oliver-chang-423a10171/">View My LinkedIn Profile</a> 
+  I am interested in how genetic algorithms can accurately estimate the conditional expectation
+  of a random variable. I use R, Python, and Java towards the goal of building a successful 
+  genetic algorithm. I am currently a 3rd-year student at Pomona college, studying computer science
+  and math.
   
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
