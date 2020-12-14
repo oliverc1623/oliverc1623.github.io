@@ -1,12 +1,12 @@
 title: Oliver Chang # your name (or website title) here
-logo: "/images/fancyoliver.jpg?raw=true" # your photo (or logo) here
+logo: "/images/trackme.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Runner, Math/CS Major, and baseball nerd - but not necessarily in that order.
   <br><br>
-  I am interested in how genetic algorithms can accurately estimate the conditional expectation
-  of a random variable. I use R, Python, and Java towards the goal of building a successful 
-  genetic algorithm. I am currently a 3rd-year student at Pomona college, studying computer science
-  and math.
+  I am interested in if genetic algorithms can accurately estimate the conditional expectation
+  of a random variable. In other words, I find the cross roab between statistics and computer science
+  fascinating. I like using R and Python for statical analysis and Java for software engineering. I 
+  am currently a 3rd-year student at Pomona college, studying computer science and math. 
   
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
