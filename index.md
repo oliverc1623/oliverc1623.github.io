@@ -7,7 +7,7 @@ Fall 2020
 
 Description: After taking computational statistics, I wanted to apply the newly learned techniques on my Data Science Research Circle Project.
 
-![Map of Police Stops Colored by Race Over Nashville](\images\nashville_map.png)
+![Map of Police Stops Colored by Race Over Nashville](images\nashville_map.png)
 
 ---
 

@@ -4,4 +4,4 @@
 
 Hi and welcome to my website's github repository. This repository was forked from https://github.com/evanca/quick-portfolio. 
 
-Cheers! 
+Cheers!
