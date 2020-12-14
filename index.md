@@ -1,16 +1,33 @@
-## Portfolio
+
+# Projects
+
+## [A Reprise on Data Science Research Circle](final_project.html)
+
+Fall 2020
+
+Description: After taking computational statistics, I wanted to apply the newly learned techniques on my Data Science Research Circle Project.
+
+![Map of Police Stops Colored by Race Over Nashville](\images\nashville_map.png)
+
 ---
 
-### Spring and Summer of 2020
+## [Data Science Research Circle](https://st47s-datascience.github.io/Chang-DSRC2020/)
 
-[Data Science Research Cricle](https://st47s-datascience.github.io/Chang-DSRC2020/)
-<img src="images/cities_night_day_log_reg.png"/>
+Spring/Summer 2020
+
+Description: Analyzed police stops in multiple U.S. cities in collaboration with Emma Godfrey (‘21), Will Gray (‘22), Amber Lee (‘22), Ethan Ong (‘21), Arm Wonghirundacha, and Ivy Yuan (‘21). 
+
+![Stop Rates by Race Across the United States - image by Amber Lee](images/geofacet_stop_rates.png)
 
 ---
 
-### Summer of 2019
-[Observing mouse behavior when stimulating the MPA-vPAG Circuit](https://github.com/oliverc1623/SummerResearch2019/blob/master/Observing%20mouse%20behavior%20when%20stimulating%20the%20vPAG.pdf)
-<img src="images/mouse.png?raw=true"/>
+## [Observing mouse behavior when stimulating the MPA-vPAG Circuit](pdf/CaltechSummer2019.pdf)
+
+Summer 2019
+
+Description: Ran a behavioral project on mouse. Stimulating a certain neuron in the mouse's brain activates object craving behavior. We wanted to see if a mouse will display this craving head-fixed on a track ball.
+
+![Image of a Head-fixed mouse during photostimulation](images/mouse.png)
 
 ---
 
