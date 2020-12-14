@@ -5,6 +5,7 @@ Hello! I write this on August 23rd, 2020. One day before the start of my third y
 ---
 
 ## 22. Julie & Julia
+
 <div style="text-align:center"><img src="images/julie.jpg" /></div>
 <br> 
 I don't know why I watched this, but I regret it. I like cooking shows and movies like The Great British Bake Off, Gordon Ramsay, and Chef. But I was very bored watching this movie. It was about a home cook cooking every recipe from a British lady's cookbook and writing about it in a blog. Enough said. 
