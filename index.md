@@ -1,7 +1,10 @@
 
-# Projects
+# [Projects](#projects) | [Coding Progess](#coding-progess) | [Contact](#contact)
+---
 
-## [A Reprise on Data Science Research Circle](final_project.html)
+## Projects
+
+### [A Reprise on Data Science Research Circle](final_project.html)
 
 Fall 2020
 
@@ -31,13 +34,28 @@ Description: Ran a behavioral project on mouse. Stimulating a certain neuron in 
 
 ---
 
-## Movies List
+## [Coding Progess](code_progress.md)
 
-- [Quarantine/Summer Movies](summer_movies.md)
-
+In an effort to track my software engineering skill level, I will posts my solutions to problems from Cracking the Coding Interview. 
+The code I will post is code written in a text editor before checking if it runs correctly. This enforces that I thoroughly think 
+about the problem and that data strcutures or algorithms I should utilize. Below each post is the solution from the textbook
+and a brief description of what I should have done. This page will be updated frequently, as I reattempt problems and add new problems
+from the book. 
 
 ---
 
+## Contact
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<span class="material-icons">email</span> eoca2018(at)mymail.pomona.edu
+<br />
+<span class="material-icons">location_on</span> South Pasadena, CA
+
+---
+
+## Movie List
+
+- [Quarantine/Summer Movies](summer_movies.md)
 
 
 

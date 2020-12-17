@@ -1,3 +1,8 @@
+---
+layout: default
+title: Movie List
+---
+
 # Quarantine/Summer Movie List
 
 Hello! I write this on August 23rd, 2020. One day before the start of my third year and fall semester of online school at Pomona College. The novel coronavirus has certainly made the spring and summer interesting. The biggest drawback coronavirus brought was having to social distance. Leaving Claremont felt disheartening, as with litimg social interaction with high school friends. However, among all the chaos in 2020, I am truly grateful for the amount of free time I had. Did I spend all of it wisely? Of course not. But it gave me a chance to reflect on life, work on personal projects, and (most entertainingly) watch movies. Here are the 22 movies I watched over the spring and summer ranked from least to most favorite. This list is just for fun. Don't take it seriously. <sup>1</sup>

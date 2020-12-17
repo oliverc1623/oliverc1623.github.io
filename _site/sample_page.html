@@ -10,13 +10,13 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Home page" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. I am interested in how genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the cross roab between statistics and computer science fascinating. I like using R and Python for statical analysis and Java for software engineering. I am currently a 3rd-year student at Pomona college, studying computer science and math." />
-<meta property="og:description" content="Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. I am interested in how genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the cross roab between statistics and computer science fascinating. I like using R and Python for statical analysis and Java for software engineering. I am currently a 3rd-year student at Pomona college, studying computer science and math." />
+<meta name="description" content="Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. &lt;/br&gt; I am interested if genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the crossroad between statistics and computer science fascinating. I like using R and Python for statistical analysis and Java for software engineering. &lt;/br&gt; I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school, I run cross country and track &amp; field, work as a math TA, and watch Dodgers baseball. &lt;/br&gt; Feel free to checkout my resume and my transcript." />
+<meta property="og:description" content="Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. &lt;/br&gt; I am interested if genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the crossroad between statistics and computer science fascinating. I like using R and Python for statistical analysis and Java for software engineering. &lt;/br&gt; I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school, I run cross country and track &amp; field, work as a math TA, and watch Dodgers baseball. &lt;/br&gt; Feel free to checkout my resume and my transcript." />
 <link rel="canonical" href="http://localhost:4000/sample_page.html" />
 <meta property="og:url" content="http://localhost:4000/sample_page.html" />
 <meta property="og:site_name" content="Oliver Chang" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/sample_page.html","headline":"Home page","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/trackme.png?raw=true"}},"description":"Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. I am interested in how genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the cross roab between statistics and computer science fascinating. I like using R and Python for statical analysis and Java for software engineering. I am currently a 3rd-year student at Pomona college, studying computer science and math.","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/sample_page.html","@type":"WebPage","headline":"Home page","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/trackme.png?raw=true"}},"description":"Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. &lt;/br&gt; I am interested if genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the crossroad between statistics and computer science fascinating. I like using R and Python for statistical analysis and Java for software engineering. &lt;/br&gt; I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school, I run cross country and track &amp; field, work as a math TA, and watch Dodgers baseball. &lt;/br&gt; Feel free to checkout my resume and my transcript.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -31,10 +31,12 @@
         <h1><a href="http://localhost:4000/">Oliver Chang</a></h1>
         
         
+        <div class="image-cropper">
           <img class="logo" src="/images/trackme.png?raw=true" alt="Logo" />
+        </div>
         
 
-        <p>Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. <br><br> I am interested in how genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the cross roab between statistics and computer science fascinating. I like using R and Python for statical analysis and Java for software engineering. I  am currently a 3rd-year student at Pomona college, studying computer science and math. 
+        <p>Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. <br></br> I am interested if genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the crossroad between statistics and computer science fascinating. I like using R and Python for statistical analysis and Java for software engineering.  <br></br> I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school, I run cross country and track & field, work as a math TA, and watch Dodgers baseball.  <br></br> Feel free to checkout my <a href="pdf/EliasOliverChang_resume.pdf">resume</a> and my  <a href="pdf/fall_transcript2020.pdf">transcript</a>.
 </p>
 
         <!-- 
@@ -48,8 +50,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Add font awesome icons -->
         <a href="https://github.com/oliverc1623" class="fa fa-github"></a>
-        <a href="https://www.linkedin.com/in/oliver-chang-423a10171/" class="fa fa-linkedin"></a>
-
+        <a href="https://www.linkedin.com/in/oliver-chang-423a10171/" class="fa fa-linkedin"></a>        
       </header>
       <section>
 
@@ -103,5 +104,25 @@
       ga('send', 'pageview');
     </script>
     
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+
   </body>
 </html>

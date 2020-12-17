@@ -141,7 +141,7 @@ h1 { font-size: 28px; }
 
 h2 { color: #d6d6d6; }
 
-h3, h4, h5, h6 { color: #d6d6d6; }
+h3, h4, h5, h6 { color: #494949; }
 
 a { color: #9b9dff; text-decoration: none; }
 
@@ -191,7 +191,7 @@ header ul li + li + li { border-right: none; width: 89px; }
 
 header ul a strong { font-size: 14px; display: block; color: #222; }
 
-section { width: 500px; float: right; padding-bottom: 50px; }
+section { width: 100%; float: center; padding-bottom: 50px; text-align: left;}
 
 small { font-size: 11px; }
 
@@ -223,7 +223,6 @@ footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-
   text-decoration: none;
 }
 
-
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
@@ -253,4 +252,8 @@ footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-
 
 .material-icons{
   vertical-align:middle;
+}
+
+.class {
+    font-size: large;
 }
