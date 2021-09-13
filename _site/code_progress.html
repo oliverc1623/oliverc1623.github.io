@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Code Progress | Oliver Chang</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Code Progress" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. &lt;/br&gt; I am interested if genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the crossroad between statistics and computer science fascinating. I like using R and Python for statistical analysis and Java for software engineering. &lt;/br&gt; I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school, I run cross country and track &amp; field, work as a math TA, and watch Dodgers baseball. &lt;/br&gt; Feel free to checkout my resume and my transcript." />
+<meta property="og:description" content="Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. &lt;/br&gt; I am interested if genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the crossroad between statistics and computer science fascinating. I like using R and Python for statistical analysis and Java for software engineering. &lt;/br&gt; I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school, I run cross country and track &amp; field, work as a math TA, and watch Dodgers baseball. &lt;/br&gt; Feel free to checkout my resume and my transcript." />
+<link rel="canonical" href="http://localhost:4000/code_progress.html" />
+<meta property="og:url" content="http://localhost:4000/code_progress.html" />
+<meta property="og:site_name" content="Oliver Chang" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/code_progress.html","@type":"WebPage","headline":"Code Progress","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/trackme.png?raw=true"}},"description":"Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. &lt;/br&gt; I am interested if genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the crossroad between statistics and computer science fascinating. I like using R and Python for statistical analysis and Java for software engineering. &lt;/br&gt; I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school, I run cross country and track &amp; field, work as a math TA, and watch Dodgers baseball. &lt;/br&gt; Feel free to checkout my resume and my transcript.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">Oliver Chang</a></h1>
+        
+        
+        <div class="image-cropper">
+          <img class="logo" src="/images/trackme.png?raw=true" alt="Logo" />
+        </div>
+        
+
+        <p>Runner, Math/CS Major, and baseball nerd - but not necessarily in that order. <br></br> I am interested if genetic algorithms can accurately estimate the conditional expectation of a random variable. In other words, I find the crossroad between statistics and computer science fascinating. I like using R and Python for statistical analysis and Java for software engineering.  <br></br> I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school, I run cross country and track & field, work as a math TA, and watch Dodgers baseball.  <br></br> Feel free to checkout my <a href="pdf/EliasOliverChang_resume.pdf">resume</a> and my  <a href="pdf/fall_transcript2020.pdf">transcript</a>.
+</p>
+
+        <!-- 
+        <p class="view"><a href="https://github.com/oliverc1623/oliverc1623.github.io">View the Project on GitHub <small>oliverc1623/oliverc1623.github.io</small></a></p>
+         -->
+
+        <!--  -->
+
+        
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Add font awesome icons -->
+        <a href="https://github.com/oliverc1623" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/oliver-chang-423a10171/" class="fa fa-linkedin"></a>        
+      </header>
+      <section>
+
+      <h1 id="table-of-contents">Table of Contents</h1>
+
+<ol>
+  <li><a href="#chapter-1-arrays-and-strings">Chapter 1</a>
+    <ol>
+      <li><a href="#is-unique">Is Unique</a></li>
+      <li><a href="#check-permutation">Check Permutation</a></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="chapter-1-arrays-and-strings">Chapter 1 Arrays and Strings</h2>
+
+<h3 id="is-unique">Is Unique</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* we'll make a hash table of booleans of size 128,
+ representing each character in ASCII. Then, we'll 
+ iterate through our word at each character and set 
+ each index in our hash table to true. First check if 
+ hash[i] is false, then set hash to true, otherwise return false. */</span> 
+
+<span class="kt">boolean</span> <span class="nf">isUnique</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">){</span>
+	<span class="kt">boolean</span><span class="o">[]</span> <span class="n">my_hash</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[</span><span class="mi">128</span><span class="o">];</span>
+	<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()-</span><span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+		<span class="kt">int</span> <span class="n">ascii_code</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+		<span class="k">if</span><span class="o">(!</span><span class="n">my_hash</span><span class="o">[</span><span class="n">ascii_code</span><span class="o">]){</span>
+			<span class="n">my_hash</span><span class="o">[</span><span class="n">ascii_code</span><span class="o">]</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+		<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+			<span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="o">;</span> 
+<span class="o">}</span>
+
+<span class="cm">/* Sort the given string. Then, iterate the string with a window of size 2. 
+If the characters within the window are the same return false otherwise keep 
+sliding the window. This goes with the assumption that the string is in the 
+alphabet TODO: make it work with non-alphabetic characters */</span>
+
+<span class="kt">boolean</span> <span class="nf">isUnique</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">){</span>
+	<span class="nc">String</span> <span class="n">sorted_s</span> <span class="o">=</span> <span class="n">sort</span><span class="o">(</span><span class="n">s</span><span class="o">);</span> <span class="c1">// look up java string api</span>
+	<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()-</span><span class="mi">2</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+		<span class="k">if</span><span class="o">(</span><span class="n">sorted_s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="n">sorted_s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)){</span>
+			<span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="check-permutation">Check Permutation</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* given two strings: use one of them make a hash map of booleans
+ by setting the ascii code index to true; then iterate through the 
+ second string and return false if a character is not in out hash map. */</span> 
+
+<span class="kt">boolean</span> <span class="nf">checkPermutation</span><span class="o">(){</span>
+	<span class="k">if</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">!=</span> <span class="n">s2</span><span class="o">.</span><span class="na">length</span><span class="o">()){</span>
+		<span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+	<span class="o">}</span>	
+	<span class="kt">boolean</span><span class="o">[]</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[</span><span class="mi">128</span><span class="o">];</span>
+	<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s1</span><span class="o">.</span><span class="na">length</span><span class="o">()-</span><span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+		<span class="n">map</span><span class="o">[</span><span class="n">s1</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)]</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s2</span><span class="o">.</span><span class="na">length</span><span class="o">()-</span><span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+		<span class="k">if</span><span class="o">(!</span><span class="n">map</span><span class="o">[</span><span class="n">s2</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)]){</span>
+			<span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="o">;</span> 
+<span class="o">}</span>
+
+<span class="cm">/* 
+Another thing we could try is first sort, "abcde" "bcdef", then iterate through length 
+n and check if a string at i is not equal to the other string at i. 
+Runtime of O(nlogn) -&gt; space complexity is in place, if we use QuickSort. 
+*/</span> 
+<span class="kt">boolean</span> <span class="nf">checkPermutation</span><span class="o">(</span><span class="nc">String</span> <span class="n">s1</span><span class="o">,</span> <span class="nc">String</span> <span class="n">s2</span><span class="o">){</span>
+	<span class="k">if</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">!=</span> <span class="n">s2</span><span class="o">.</span><span class="na">length</span><span class="o">()){</span>
+		<span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+	<span class="o">}</span>	
+	<span class="nc">String</span> <span class="n">s1_sorted</span> <span class="o">=</span> <span class="n">sort</span><span class="o">(</span><span class="n">s1</span><span class="o">);</span> <span class="c1">// write sort function later</span>
+	<span class="nc">String</span> <span class="n">s2_sorted</span> <span class="o">=</span> <span class="n">sort</span><span class="o">(</span><span class="n">s2</span><span class="o">);</span>
+	<span class="c1">//we could just check if the strings are equal</span>
+	<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s1</span><span class="o">.</span><span class="na">length</span><span class="o">()-</span><span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+		<span class="k">if</span><span class="o">(</span><span class="n">s1_sorted</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">!=</span> <span class="n">s2_sorted</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)){</span>
+			<span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="o">;</span> 
+<span class="o">}</span>
+</code></pre></div></div>
+<p>My solution is sloppy because we are using two separate for loop, both of length n. This would have a runtime of O(n).</p>
+
+
+      </section>
+      <footer>
+        <!-- 
+        <p>This project is maintained by <a href="https://github.com/oliverc1623">oliverc1623</a></p>
+         -->
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-000000-0', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+
+  </body>
+</html>

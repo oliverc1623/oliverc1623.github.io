@@ -1,0 +1,17 @@
+title: Oliver Chang # your name (or website title) here
+logo: "/images/trackme.png?raw=true" # your photo (or logo) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
+  Runner, Math/CS Major, and baseball nerd - but not necessarily in that order.
+  <br></br>
+  I am interested if genetic algorithms can accurately estimate the conditional expectation
+  of a random variable. In other words, I find the crossroad between statistics and computer science
+  fascinating. I like using R and Python for statistical analysis and Java for software engineering. 
+  <br></br>
+  I am currently a 3rd-year at Pomona college, studying computer science and math. Outside of school,
+  I run cross country and track & field, work as a math TA, and watch Dodgers baseball. 
+  <br></br>
+  Feel free to checkout my <a href="pdf/EliasOliverChang_resume.pdf">resume</a> and my 
+  <a href="pdf/fall_transcript2020.pdf">transcript</a>.
+  
+theme: jekyll-theme-minimal
+google_analytics: UA-000000-0 # your Google Analytics tracking ID here
