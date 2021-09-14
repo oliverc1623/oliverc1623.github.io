@@ -1,6 +1,6 @@
 # Crossing the Reality Gap
 
-Over the summer, I investigated multiple neural network (NN) architectures for autonomous navigation in simulation. We used a render from the Raycast module to make custom mazes for models to traverse. The raycasting simulation renders a maze with a an arrow to direct the agent and a blue box, indicating the end. 
+Over the summer, I investigated multiple neural network (NN) architectures for autonomous navigation in simulation. The lab and I used a renderer from the Raycast module to make custom mazes for models to traverse. The raycasting simulation renders a maze with a an arrow to direct the agent and a blue box, indicating the end. 
 
 ![](/images/learner.gif)
 
