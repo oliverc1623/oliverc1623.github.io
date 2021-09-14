@@ -8,7 +8,11 @@ In this project, I will take the best architecture from that survey to train a m
 
 For data collection, I'll build an automator to collect images of the maze with proper camera orientation. The automator can include two variations to data collection such as uniformly placing the bot and wandering through the maze with random noise. After making the dataset, the next step would apply technique called CycleGAN, which is image-to-image translation. This process will also require training a neural network. Ideally, an well-trained model should traverse the maze with 100% accuracy over many mazes with multiple repetition. The end goal would be to apply our best model to a real-life robot, which could involve some electronics work. 
 
-![](/images/map.png)
+![](/images/raycast.png)
+
+![](/images/unreal.png)
+
+![](/images/robot.jpg)
 
 # Goals
 
