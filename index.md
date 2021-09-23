@@ -1,5 +1,5 @@
 
-# [Projects](#projects) | [Coding Progess](#coding-progess) | [Contact](#contact) | [CS152](#cs152)
+# [Projects](#projects) | [Coding Progess](#coding-progess) | [Contact](#contact) | [CS152](cs152/cs152_landing)
 ---
 
 ## Projects
