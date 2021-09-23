@@ -1,4 +1,4 @@
-# [Proposal](/proposal)
+# [Proposal](proposal)
 
-# [outline](/outline)
+# [outline](outline)
 
