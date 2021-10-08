@@ -61,12 +61,13 @@ This paper introduces RoboTHOR, a platform that helps develop and train agents o
 
 ## Overview of the following
 
-**Type of Neural Network**
+### Type of Neural Network
+
 We will use a convolutional neural network for the naive maze navigation. We’ll use the XResNeXt18, XResNeXt50, and AlexNet architectures since they performed the best in the Raycasting simulation. Additionally, we'll use a Generative adversarial network for raycasting to Unreal image-to-image translation. 
 
-**Shape and size of inputs**
+### Shape and size of inputs
 Images will be 224x224 and they are RGB pngs they are three-channel images 
 
-**Shape and type of outputs**
+### Shape and type of outputs
 The neural network will have two types of outputs. One is an integer indicating left, right, and straight. This will tell us which direction to turn in. This is a classification output.
 The second output is a continuous value, which tells us which angle to turn at. This is a regression output.
