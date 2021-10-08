@@ -43,3 +43,30 @@ Computer graphics can construct virtual worlds that allow different agents to si
 ## [**RoboTHOR: An Open Simulation-to-Real Embodied AI Platform**](https://arxiv.org/abs/2004.06799)
 
 This paper introduces RoboTHOR, a platform that helps develop and train agents on various AI navigation tasks in simulated environments and enables testing in both the simulation and the real world. The paper discusses the many challenges associated with the nature of transferring learning between real and simulated worlds. As a platform, RoboTHOR aims to overcome these many challenges by providing an accessible and replicable system that focuses on the learning between simulated spaces and its corresponding physical environment. Initial experimentation has shown that there still is a large gap to overcome, but they hope RoboTHOR will narrow the gap as it’s continually used and updated.
+
+# Update One
+
+## Name and link of the software we will use
+
+- UnrealEngine
+- Plugins include UnrealCV
+- Raycasting Simulator
+- Python
+- FastAI & PyTorch
+
+## Name and link to dataset
+
+- Set of images collected with the wandering automator inside of the UnrealEngine. We will create this by using the Raycasting automator tailored to UnrealEngine. The dataset size will start with 10,000. This will serve as a proxy. If things go well, we’ll increase our dataset to 100,000. 
+- We can use the dataset from the Raycasting simulation project over the summer 
+
+## Overview of the following
+
+**Type of Neural Network**
+We’ll use the XResNeXt18, XResNeXt50, and AlexNet architectures since they performed the best in the Raycasting simulation
+
+**Shape and size of inputs**
+Images will be 224x224 and they are RGB pngs they are three-channel images 
+
+**Shape and type of outputs**
+The neural network will have two types of outputs. One is an integer indicating left, right, and straight. This will tell us which direction to turn in. This is a classification output.
+The second output is a continuous value, which tells us which angle to turn at. This is a regression output.
