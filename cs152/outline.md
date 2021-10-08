@@ -48,21 +48,21 @@ This paper introduces RoboTHOR, a platform that helps develop and train agents o
 
 ## Name and link of the software we will use
 
-- UnrealEngine
-- Plugins include UnrealCV
-- Raycasting Simulator
-- Python
-- FastAI & PyTorch
+- [UnrealEngine](https://www.unrealengine.com/en-US/)
+- Plugins include [UnrealCV](https://unrealcv.org/)
+- [Raycasting Simulator](https://github.com/anthonyjclark/raycasting-simulation)
+- [Python](https://www.python.org/)
+- [FastAI](https://www.fast.ai/) & [PyTorch](https://pytorch.org/)
 
 ## Name and link to dataset
 
 - Set of images collected with the wandering automator inside of the UnrealEngine. We will create this by using the Raycasting automator tailored to UnrealEngine. The dataset size will start with 10,000. This will serve as a proxy. If things go well, we’ll increase our dataset to 100,000. 
-- We can use the dataset from the Raycasting simulation project over the summer 
+- We can use the dataset from the Raycasting simulation project over the summer for consistency
 
 ## Overview of the following
 
 **Type of Neural Network**
-We’ll use the XResNeXt18, XResNeXt50, and AlexNet architectures since they performed the best in the Raycasting simulation
+We will use a convolutional neural network for the naive maze navigation. We’ll use the XResNeXt18, XResNeXt50, and AlexNet architectures since they performed the best in the Raycasting simulation. Additionally, we'll use a Generative adversarial network for raycasting to Unreal image-to-image translation. 
 
 **Shape and size of inputs**
 Images will be 224x224 and they are RGB pngs they are three-channel images 
