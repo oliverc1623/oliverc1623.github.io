@@ -66,8 +66,21 @@ This paper introduces RoboTHOR, a platform that helps develop and train agents o
 We will use a convolutional neural network for the naive maze navigation. We’ll use the XResNeXt18, XResNeXt50, and AlexNet architectures since they performed the best in the Raycasting simulation. Additionally, we'll use a Generative adversarial network for raycasting to Unreal image-to-image translation. 
 
 ### Shape and size of inputs
+
 Images will be 224x224 and they are RGB pngs they are three-channel images 
 
 ### Shape and type of outputs
+
 The neural network will have two types of outputs. One is an integer indicating left, right, and straight. This will tell us which direction to turn in. This is a classification output.
 The second output is a continuous value, which tells us which angle to turn at. This is a regression output.
+
+# Introduction
+
+With improving technology, graphics processing units (GPUs) are utilized more in computer graphics. One field that has reaped the benefits of GPU improvement is simulations. Physics simulations that required data parallelism and intensive computation are now more accessible than ever. One application of simulation is in autonomous navigation. The high cost of building and maintaining a robot that can autonomously traverse terrain makes it challenging to implement computational intelligence. One way to test artificial intelligence in robots is through simulations. We are interested in examining neural network performance across different simulations and real life. In particular, we are looking to see how an agent can traverse a maze using a neural network (NN). We want to observe a robot learn to navigate a terrain, identifying a path to reach a goal. 
+NNs are useful in that we can feed in images to a model and have it return a direction for which a robot can interpret and move accordingly. For this cross-simulation experiment, we have selected a handful of architectures that were trained in a Raycast simulation. We believe they will cross the reality gap best in the Unreal simulation. Such architectures include ResNet, AlexNet, and an original architecture that takes an image and concatenates the previous command string. The Unreal simulation serves as a proxy for how well the models might perform in real life. We first demonstrate raycasting model performance in the Unreal simulation. After, we train models in the unreal simulation and observe their performance in the raycasting simulation. Finally, we apply a Cycle-GAN translation to generate a synthetic dataset that merges two simulations. 
+
+# Related Works
+
+Neural Networks have been shown to be effective at navigating agents in different environments. However, successful training of the model often requires large quantities of training data, and in many scenarios gathering this data with real world testing may be difficult. Therefore, many researchers have attempted to create synthetic data of their specific environment in order to train more complicated models. This has shown to be an effective training method in many cases.
+Weichao Qiu and Alan Yuille [cite] created UnrealCV, a tool built on Unreal Engine 4 that allows researchers to build a virtual world, and then extract the information collected by an agent in that world to be used in a neural network. This model can then be used to send information back to the agent to perform tasks in the virtual world.
+Chang et al. built a simulation to collect data to train many models to evaluate their resulting behaviors. The data was collected from the simulation, and different data collection techniques were studied to determine the most effective strategy. It was found that the models performed well in the given simulation, they fail when the simulation environment is altered in various small ways.
