@@ -84,3 +84,17 @@ NNs are useful in that we can feed in images to a model and have it return a dir
 Neural Networks have been shown to be effective at navigating agents in different environments. However, successful training of the model often requires large quantities of training data, and in many scenarios gathering this data with real world testing may be difficult. Therefore, many researchers have attempted to create synthetic data of their specific environment in order to train more complicated models. This has shown to be an effective training method in many cases.
 Weichao Qiu and Alan Yuille [cite] created UnrealCV, a tool built on Unreal Engine 4 that allows researchers to build a virtual world, and then extract the information collected by an agent in that world to be used in a neural network. This model can then be used to send information back to the agent to perform tasks in the virtual world.
 Chang et al. built a simulation to collect data to train many models to evaluate their resulting behaviors. The data was collected from the simulation, and different data collection techniques were studied to determine the most effective strategy. It was found that the models performed well in the given simulation, they fail when the simulation environment is altered in various small ways.
+
+# Project Milestone 6: Update 2
+
+- What have you completed or tried to complete?
+
+We tried generating training mazes for the UnrealEngine. From the summer project, we have 20 mazes that were generated. We managed to generate each maze. However, this is a manual process, and we aim to finish generating all the unreal mazes in the next few days. 
+
+- What issues have you encountered?
+
+There is not a way to programmatically generate UnrealEngine mazes. We are still new to Unreal, so we are trying to learn about maze generation using UnrealEngine. 
+
+- I’ll also ask you to let me know the grade your group is aiming for (you’ll enter this on gradescope).
+
+We are aiming to get an A on this project. 
