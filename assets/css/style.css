@@ -185,7 +185,7 @@ header ul a:hover, header ul a:focus { color: #675C5C; font-weight: bold; }
 
 header ul a:active { background-color: #f0f0f0; }
 
-strong { color: #222; font-weight: 700; }
+strong { color: rgb(255, 255, 255); font-weight: 700; }
 
 header ul li + li + li { border-right: none; width: 89px; }
 
