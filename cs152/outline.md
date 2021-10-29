@@ -84,8 +84,11 @@ NNs are useful in that we can feed in images to a model and have it return a dir
 
 Neural Networks have been shown to be effective at navigating agents in different environments. However, successful training of the model often requires large quantities of training data, and in many scenarios gathering this data with real world testing may be difficult. Therefore, many researchers have attempted to create synthetic data of their specific environment in order to train more complicated models. This has shown to be an effective training method in many cases.
 
-Weichao (Qiu)[https://link.springer.com/content/pdf/10.1007/978-3-319-49409-8_75.pdf] and Alan Yuille created UnrealCV, a tool built on Unreal Engine 4 that allows researchers to build a virtual world, and then extract the information collected by an agent in that world to be used in a neural network. This model can then be used to send information back to the agent to perform tasks in the virtual world.
+Weichao [Qiu](https://link.springer.com/content/pdf/10.1007/978-3-319-49409-8_75.pdf) and Alan Yuille created UnrealCV, a tool built on Unreal Engine 4 that allows researchers to build a virtual world, and then extract the information collected by an agent in that world to be used in a neural network. This model can then be used to send information back to the agent to perform tasks in the virtual world.
+
 Chang et al. built a simulation to collect data to train many models to evaluate their resulting behaviors. The data was collected from the simulation, and different data collection techniques were studied to determine the most effective strategy. It was found that the models performed well in the given simulation, they fail when the simulation environment is altered in various small ways.
+
+[Deitke et al.](https://openaccess.thecvf.com/content_CVPR_2020/html/Deitke_RoboTHOR_An_Open_Simulation-to-Real_Embodied_AI_Platform_CVPR_2020_paper.html) introduces RoboTHOR, a platform that helps develop and train agents on various AI navigation tasks in simulated environments and enables testing in both the simulation and the real world. The paper discusses the many challenges associated with the nature of transferring learning between real and simulated worlds. For this project, we seek to tackle this challenge demonstrated in the paper. Specifically, we turn to UnrealEngine to provide a high quality simulation environment to ease the transitions. We are interested in seeing if the lighting and higher quality graphics from the game can help the neural network travel through the maze in real-life in similar settings. 
 
 # Project Milestone 6: Update 2
 
@@ -100,3 +103,22 @@ There is not a way to programmatically generate UnrealEngine mazes. We are still
 - I’ll also ask you to let me know the grade your group is aiming for (you’ll enter this on gradescope).
 
 We are aiming to get an A on this project. 
+
+# Methods Outline
+
+## Simulation
+
+- Discuss the creation of the different mazes in Unreal Engine. Discuss more the details of the world and the choices that were made. Explain how we use UnrealCV to control the simulation, and extract images from it.
+
+## Data Collection
+
+- We will collect images from the robot traversing through 5 different mazes, for an approximate total of 10,000 images. Here, we discuss the “wandering” method of the robot in its path through the maze to collect these images, and how that path is determined.
+
+## Training
+
+- From previous research, we found that XResNeXt18, XResNeXt50, AlexNet, DenseNet121 performed the best in the raycasting-simulation. Thus, we will train unreal engine images on these neural network architectures.
+
+## Testing
+
+- Here we test the different Unreal models in the Unreal simulation, as well as the raycasting models. This is the “crossing” part of the project.
+Moreover, we will test the Unreal models in the raycasting-simulation to demonstrate cross-domain performance.
