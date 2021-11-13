@@ -127,7 +127,7 @@ Moreover, we will test the Unreal models in the raycasting-simulation to demonst
 
 - What data you will present?
 
-We will present the 10,000+ images we collected using the automator in the Unreal mazes. As well as tables and charts to show statistics of how well the model performed navigating a maze. 
+We will present the 10,000+ images we collected using the automator in the Unreal mazes, as well as tables and charts to show statistics of how well the model performed navigating a maze. 
 
 - How you will interpret/evaluate your data?
 
