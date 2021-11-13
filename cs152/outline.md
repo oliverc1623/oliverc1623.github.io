@@ -122,3 +122,21 @@ We are aiming to get an A on this project.
 
 - Here we test the different Unreal models in the Unreal simulation, as well as the raycasting models. This is the “crossing” part of the project.
 Moreover, we will test the Unreal models in the raycasting-simulation to demonstrate cross-domain performance.
+
+# Discussion Outline
+
+- What data you will present?
+
+We will present the 10,000+ images we collected using the automator in the Unreal mazes.
+
+- How you will interpret/evaluate your data?
+
+The dataset will be used to train a CNN model. We will then evaluate this model in the Unreal Engine and Raycasting simulation. 
+
+- How your work compare to others?
+
+Our work will be implemented in other domains. As such, we can evaluate our model's performance and compare it to other models made for the raycasting simulation. Our model is different from many others because we are using simulated data instead of images collected from real environments.
+
+- How will you prove your point (support your claims)?
+
+We hypothesize that cross domain adaptation is a feasible learning method. To prove this, we will run the model trained in the Unreal engine in the raycasting simulation. Conversely, models trained in the raycasting simulation will run in the Unreal mazes. If the Unreal models perform better in the raycasting simulation than raycast models in Unreal, then this indicates improvement in cross domain adaptation. 
