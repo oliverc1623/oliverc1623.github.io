@@ -74,21 +74,6 @@ Images will be 224x224 and they are RGB pngs they are three-channel images
 The neural network will have two types of outputs. One is an integer indicating left, right, and straight. This will tell us which direction to turn in. This is a classification output.
 The second output is a continuous value, which tells us which angle to turn at. This is a regression output.
 
-# Introduction
-
-With improving technology, graphics processing units (GPUs) are utilized more in computer graphics. One field that has reaped the benefits of GPU improvement is simulations. Physics simulations that required data parallelism and intensive computation are now more accessible than ever. One application of simulation is in autonomous navigation. The high cost of building and maintaining a robot that can autonomously traverse terrain makes it challenging to implement computational intelligence. One way to test artificial intelligence in robots is through simulations. We are interested in examining neural network performance across different simulations and real life. In particular, we are looking to see how an agent can traverse a maze using a neural network (NN). We want to observe a robot learn to navigate a terrain, identifying a path to reach a goal. 
-
-NNs are useful in that we can feed in images to a model and have it return a direction for which a robot can interpret and move accordingly. For this cross-simulation experiment, we have selected a handful of architectures that were trained in a Raycast simulation. We believe they will cross the reality gap best in the Unreal simulation. Such architectures include ResNet, AlexNet, and an original architecture that takes an image and concatenates the previous command string. The Unreal simulation serves as a proxy for how well the models might perform in real life. We first demonstrate raycasting model performance in the Unreal simulation. After, we train models in the unreal simulation and observe their performance in the raycasting simulation. Finally, we apply a Cycle-GAN translation to generate a synthetic dataset that merges two simulations. 
-
-# Related Works
-
-Neural Networks have been shown to be effective at navigating agents in different environments. However, successful training of the model often requires large quantities of training data, and in many scenarios gathering this data with real world testing may be difficult. Therefore, many researchers have attempted to create synthetic data of their specific environment in order to train more complicated models. This has shown to be an effective training method in many cases.
-
-Weichao [Qiu](https://link.springer.com/content/pdf/10.1007/978-3-319-49409-8_75.pdf) and Alan Yuille created UnrealCV, a tool built on Unreal Engine 4 that allows researchers to build a virtual world, and then extract the information collected by an agent in that world to be used in a neural network. This model can then be used to send information back to the agent to perform tasks in the virtual world.
-
-Chang et al. built a simulation to collect data to train many models to evaluate their resulting behaviors. The data was collected from the simulation, and different data collection techniques were studied to determine the most effective strategy. It was found that the models performed well in the given simulation, they fail when the simulation environment is altered in various small ways.
-
-[Deitke et al.](https://openaccess.thecvf.com/content_CVPR_2020/html/Deitke_RoboTHOR_An_Open_Simulation-to-Real_Embodied_AI_Platform_CVPR_2020_paper.html) introduces RoboTHOR, a platform that helps develop and train agents on various AI navigation tasks in simulated environments and enables testing in both the simulation and the real world. The paper discusses the many challenges associated with the nature of transferring learning between real and simulated worlds. For this project, we seek to tackle this challenge demonstrated in the paper. Specifically, we turn to UnrealEngine to provide a high quality simulation environment to ease the transitions. We are interested in seeing if the lighting and higher quality graphics from the game can help the neural network travel through the maze in real-life in similar settings. 
 
 # Project Milestone 6: Update 2
 
@@ -103,6 +88,24 @@ There is not a way to programmatically generate UnrealEngine mazes. We are still
 - I’ll also ask you to let me know the grade your group is aiming for (you’ll enter this on gradescope).
 
 We are aiming to get an A on this project. 
+
+# Complete Rough Draft
+
+# Introduction 
+
+With improving technology, graphics processing units (GPUs) are utilized more in computer graphics. One field that has reaped the benefits of GPU improvement is simulations. Physics simulations that required data parallelism and intensive computation are now more accessible than ever. One application of simulation is in autonomous navigation. The high cost of building and maintaining a robot that can autonomously traverse terrain makes it challenging to implement computational intelligence. One way to test artificial intelligence in robots is through simulations. We are interested in examining neural network performance across different simulations and real life. In particular, we are looking to see how an agent can traverse a maze using a neural network (NN). We want to observe a robot learn to navigate a terrain, identifying a path to reach a goal. 
+
+NNs are useful in that we can feed in images to a model and have it return a direction for which a robot can interpret and move accordingly. For this cross-simulation experiment, we have selected a handful of architectures that were trained in a Raycast simulation. We believe they will cross the reality gap best in the Unreal simulation. Such architectures include ResNet, AlexNet, and an original architecture that takes an image and concatenates the previous command string. The Unreal simulation serves as a proxy for how well the models might perform in real life. We first demonstrate raycasting model performance in the Unreal simulation. After, we train models in the unreal simulation and observe their performance in the raycasting simulation. Finally, we apply a Cycle-GAN translation to generate a synthetic dataset that merges two simulations. 
+
+# Related Works
+
+Neural Networks have been shown to be effective at navigating agents in different environments. However, successful training of the model often requires large quantities of training data, and in many scenarios gathering this data with real world testing may be difficult. Therefore, many researchers have attempted to create synthetic data of their specific environment in order to train more complicated models. This has shown to be an effective training method in many cases.
+
+Weichao [Qiu](https://link.springer.com/content/pdf/10.1007/978-3-319-49409-8_75.pdf) and Alan Yuille created UnrealCV, a tool built on Unreal Engine 4 that allows researchers to build a virtual world, and then extract the information collected by an agent in that world to be used in a neural network. This model can then be used to send information back to the agent to perform tasks in the virtual world.
+
+Chang et al. built a simulation to collect data to train many models to evaluate their resulting behaviors. The data was collected from the simulation, and different data collection techniques were studied to determine the most effective strategy. It was found that the models performed well in the given simulation, they fail when the simulation environment is altered in various small ways.
+
+[Deitke et al.](https://openaccess.thecvf.com/content_CVPR_2020/html/Deitke_RoboTHOR_An_Open_Simulation-to-Real_Embodied_AI_Platform_CVPR_2020_paper.html) introduces RoboTHOR, a platform that helps develop and train agents on various AI navigation tasks in simulated environments and enables testing in both the simulation and the real world. The paper discusses the many challenges associated with the nature of transferring learning between real and simulated worlds. For this project, we seek to tackle this challenge demonstrated in the paper. Specifically, we turn to UnrealEngine to provide a high quality simulation environment to ease the transitions. We are interested in seeing if the lighting and higher quality graphics from the game can help the neural network travel through the maze in real-life in similar settings. 
 
 # Methods
 
