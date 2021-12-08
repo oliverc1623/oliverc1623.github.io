@@ -142,7 +142,7 @@ There are ten validation mazes. To measure model performance on the validation m
 
 We will present a bar plot that shows average maze completion for each model. For the Unreal models navigating the raycasting simulation, we present a movie of the DenseNet Architecture navigating a raycasting maze. 
 
-![](/images/bar.png)
+![](/images/bar.jpg)
 
 The bar plot presented shows average maze completion for the five models in the Unreal simulation. Each bar displays a 95% confidence interval for the true mean. Observe that the DenseNet121 architecture performed the best out of the five, averaging at ~65% maze completion. ResNet34 is the runner up averaging 60% maze completion. Note that DenseNet121 and ResNet34 have wide confidence intervals. This suggests higher variability in maze solving. Even though there is higher variance, DenseNet121 and ResNet34 could navigate further than XResNext18 or XResNext50 on the same maze. 
 As for the movie, we see that the Unreal model starts off good. It recognizes that it must go down the corridor in a straight line. However, once it reaches the corner the model fails to turn left and runs into the wall. 
