@@ -12,6 +12,10 @@ Crossing the Reality Gap
 
 # Final Project
 
+# Abstract
+
+We seek to train a neural network to navigate a simulated maze created in Unreal Engine. We first create a dataset of over 10,000  images taken from within the simulation. Then, we use this data to train a model using different architectures to determine which one performs the best inside of the simulation. Finally, we evaluate the model’s performance in a different simulation to determine if the learning can be generalized. We found that the model trained on our data set could make it through a considerable amount of the mazes simulated in Unreal Engine, but failed to find similar success in other simulated environments.
+
 # Introduction 
 
 With improving technology, graphics processing units (GPUs) are utilized more in computer graphics. One field that has reaped the benefits of GPU improvement is simulations. Physics simulations that required data parallelism and intensive computation are now more accessible than ever. One application of simulation is in autonomous navigation. The high cost of building and maintaining a robot that can autonomously traverse terrain makes it challenging to implement computational intelligence. One way to test artificial intelligence in robots is through simulations. We are interested in examining neural network performance across different simulations and real life. In particular, we are looking to see how an agent can traverse a maze using a neural network (NN). We want to observe a robot learn to navigate a terrain, identifying a path to reach a goal. 
