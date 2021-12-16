@@ -62,7 +62,7 @@ We constructed a testing apparatus to examine model performance. We care more ab
 
 There are ten validation mazes. To measure model performance on the validation mazes, we wrote a nested for loop. The outer loop iterates through the models, and the inner loop iterates through the mazes. Inside the inner loop we call Imitate. This function takes in a model and a maze and does the actual predicting. Imitate is essentially a while loop that predicts what move the robot should make (given an image of the current robot’s point of view) and apply that move. After moving, we get the updated POV image and pass it into the model. We continue this process until the model reaches the end of the maze, gets off the correct path, or accidentally induces an infinite loop. Exiting the while loop runs a code block that writes the model name, maze name, and percentage completed to a csv file for analysis. This evaluating framework works for Unreal models trained in Unreal, and it should work for future assessment on models trained in the raycasting-simulation. 
 
-# Discussion Outline
+# Discussion
 
 We will present a bar plot that shows average maze completion for each model, using the BFS completion metric discussed in the previous section. For the Unreal models navigating the raycasting simulation, we present a movie of the DenseNet Architecture navigating a raycasting maze. 
 
