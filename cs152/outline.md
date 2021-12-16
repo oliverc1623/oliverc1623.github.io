@@ -1,4 +1,4 @@
-# CS152 Project Outline
+# Reality Gap
 
 ## Name:
 
@@ -10,7 +10,7 @@ Crossing the Reality Gap
 - Max Rose
 - Oliver Chang
 
-# Complete Rough Draft
+# Final Project
 
 # Introduction 
 
@@ -54,7 +54,7 @@ Using this method, we collected over 10,000 images through 10 different mazes, o
 
 We trained models on the standard CNN classification paradigm. From previous research, we found that XResNeXt18, XResNeXt50, AlexNet, DenseNet121 performed the best in the raycasting-simulation. We train unreal engine images on these neural network architectures. We also included a ResNet34 model because the ResNet is a well-regarded vision architecture. Since we put the class label in the image file names, we need a function to retrieve those labels. The function `filename_to_class` does just that; it will get the angle in the filename and assign the label left, right, or forward. 
 
-We used FastAI’s library for model training. FastAI is a wrapper library of the PyTorch machine learning library. This allowed us to write succinct code and have FastAI handle optimizing the nuanced detail in model training. For dataloaders we used the `ImageDataLoaders.from_name_func` class. This class takes in the path to the files, file to label function, and validation percentage. The dataset was split into training and validation sets with validation getting 20% of the data. The models were trained on the same dataloader because we are concerned with architecture performance. When using the cnn_learner class from FastAI, we specified the architectures but passed in the same dataloader and set pretrained to True five times. In other words, we instantiated five cnn_learner objects, each with a different architecture. After, we fine tuned, that is trained, each model for eight epochs and exported them as pkl files.
+We used [FastAI](https://www.fast.ai)’s library for model training. FastAI is a wrapper library of the PyTorch machine learning library. This allowed us to write succinct code and have FastAI handle optimizing the nuanced detail in model training. For dataloaders we used the `ImageDataLoaders.from_name_func` class. This class takes in the path to the files, file to label function, and validation percentage. The dataset was split into training and validation sets with validation getting 20% of the data. The models were trained on the same dataloader because we are concerned with architecture performance. When using the cnn_learner class from FastAI, we specified the architectures but passed in the same dataloader and set pretrained to True five times. In other words, we instantiated five cnn_learner objects, each with a different architecture. After, we fine tuned, that is trained, each model for eight epochs and exported them as pkl files.
 
 ## Testing
 
