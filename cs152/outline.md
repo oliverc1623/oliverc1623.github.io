@@ -78,7 +78,7 @@ We then test our model in the raycasting simulation and found that the agent was
 
 ![](/images/densenet_raycast.gif)
 
-Our work can be directly compared to the ARCS lab’s research they conducted over the summer. A key difference is the success in different architecture types. DenseNet121 and ResNet34 are heavy-weight models that performed well in the Unreal game. However, initial results from the summer paper show heavy-weight networks performing worse than some light-weight networks. This difference in maze traversal can stem from the fact that our models were trained on 10 times less images than the raycasting models. 
+Our work can be directly compared to the ARCS lab’s research they conducted over the summer. A key difference is the success in different architecture types. DenseNet121 and ResNet34 are both both models with many layers that take a long time to train. Both of these performed well in the Unreal simulations. However, initial results from the summer paper show that smaller networks with less layers actually outperformed networks with more. This difference in maze traversal can stem from the fact that our models were trained on 10 times less images than the raycasting models. 
 This project shows that models trained in their respective environments perform better than cross-trained models. Even though unreal models did not solve mazes as far as raycasting models, there is some evidence that suggests cross adaptation is a feasible learning method. The DenseNet model managed to travel in a straight line without getting stuck in a loop. The architecture’s use of features from all complexity levels could be advantages in scenarios where data is limited. 
 
 # Reflection
