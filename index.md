@@ -4,6 +4,10 @@
 
 ## Projects
 
+### [Baseball Pitcher Comparer](baseball.md)
+
+In this project, I dabble with R and the Lahman package to illustrate a pitcher's performance compared to the rest of MLB. 
+
 ### [A Reprise on Data Science Research Circle](final_project.html)
 
 Fall 2020
