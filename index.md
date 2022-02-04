@@ -4,6 +4,8 @@
 
 ## Projects
 
+### [ERA vs OPS](team_stats.html)
+
 ### [Baseball Pitcher Comparer](baseball.md)
 
 In this project, I dabble with R and the Lahman package to illustrate a pitcher's performance compared to the rest of MLB. 
