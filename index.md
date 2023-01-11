@@ -4,7 +4,7 @@
 
 ## Projects
 
-### [Explaining the Sim-to-Real Reality Gap](sim2real.html)
+### [Explaining the Sim-to-Real Reality Gap]([phd/sim2real.md)
 
 My first PhD project!
 
