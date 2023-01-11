@@ -1,14 +1,28 @@
 
-# [Projects](#projects) | [Coding Progess](#coding-progess) | [Contact](#contact) | [CS152](cs152/cs152_landing)
+# [Projects](#projects) | [Contact](#contact) | 
 ---
 
 ## Projects
 
 ### [ERA vs OPS](team_stats.html)
 
+![ERA plotted against OPS for MLB teams](images\era_ops.PNG)
+
+---
+
 ### [Baseball Pitcher Comparer](baseball.md)
 
-In this project, I dabble with R and the Lahman package to illustrate a pitcher's performance compared to the rest of MLB. 
+In this project, I dabble with R and the Lahman package to illustrate a pitcher's performance compared to the rest of MLB.
+
+![Clayton Kershaw (blue dots) plotted against the rest of MLB pitchers](images/kersh.PNG)
+
+---
+
+### [CS152](cs152/outline.md)
+
+![](/images/densenet_raycast.gif)
+
+---
 
 ### [A Reprise on Data Science Research Circle](final_project.html)
 
@@ -46,16 +60,18 @@ In an effort to track my software engineering skill level, I will posts my solut
 The code I will post is code written in a text editor before checking if it runs correctly. This enforces that I thoroughly think 
 about the problem and that data strcutures or algorithms I should utilize. Below each post is the solution from the textbook
 and a brief description of what I should have done. This page will be updated frequently, as I reattempt problems and add new problems
-from the book. 
+from the book.
 
 ---
 
 ## Contact
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<span class="material-icons">email</span> eoca2018(at)mymail.pomona.edu
+<span class="material-icons">email</span> elochang@ucsc.edu
 <br />
-<span class="material-icons">location_on</span> South Pasadena, CA
+<span class="material-icons">location_on</span> Santa Cruz, CA
+
+![](images/)
 
 ---
 
