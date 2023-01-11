@@ -4,6 +4,12 @@
 
 ## Projects
 
+### [Explaining the Sim-to-Real Reality Gap](sim2real.html)
+
+My first PhD project!
+
+---
+
 ### [ERA vs OPS](team_stats.html)
 
 ![ERA plotted against OPS for MLB teams](images\era_ops.PNG)
@@ -71,7 +77,7 @@ from the book.
 <br />
 <span class="material-icons">location_on</span> Santa Cruz, CA
 
-![](images/)
+![](images/cs62_me.jpg)
 
 ---
 
