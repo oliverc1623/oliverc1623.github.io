@@ -9,7 +9,9 @@
 My first PhD project!
 
 • Investigating the sim-to-real reality gap problem in autonomous vehicles
+
 • Interested in seeing if explanations verify robustness of complex systems
+
 • Trained a PyTorch object-detection model with accuracy up to 75% on NuImages
 
 ---
