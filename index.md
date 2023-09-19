@@ -6,13 +6,13 @@
 
 ### [Benchmarking Policy-Gradient Methods for Deep Reinforcement Learning in High-Fidelity Autonomous Vehicles Simulators](pdf/main_640862.pdf)
 
-My first PhD project!
+My first PhD paper!
 
-• Investigating the sim-to-real reality gap problem in autonomous vehicles
-
-• Interested in seeing if explanations verify robustness of complex systems
-
-• Trained a PyTorch object-detection model with accuracy up to 75% on NuImages
+- Increased lane following and obstacle avoidance in a simulated self-driving car by 400 meters by applying a deep reinforcement learning algorithm that uses multiprocessing and dynamic programming, leading to faster bench marking by 3-fold.
+- Improved training consistency from a correlation value of 0.18 to 0.39 by implementing a vision-based transformer and recurrent neural network, resulting in greater generalizability in PyTorch.
+-  Accelerated learning speed by 20% by orchestrating a Nautilus Cluster to run 6 concurrent simulators to scale up training efforts, leading faster convergence in performance stability.
+-  Expanded system to run on 3 additional open-source simulators by leading a team of five undergraduate
+students who applied my algorithms. Tasks included code-reviews, user feedback, and debugging code.
 
 ---
 
