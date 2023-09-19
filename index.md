@@ -4,7 +4,7 @@
 
 ## Projects
 
-### [Explaining the Sim-to-Real Reality Gap](pdf/cse246_project_proposal.pdf)
+### [Benchmarking Policy-Gradient Methods for Deep Reinforcement Learning in High-Fidelity Autonomous Vehicles Simulators](pdf/main_640862.pdf)
 
 My first PhD project!
 
